@@ -3,6 +3,7 @@ databases:
     databaseName: hostedgpt
     user: hostedgpt
     plan: free
+    region: frankfurt
 
 envVarGroups:
 - name: hostedgpt-secrets
@@ -25,6 +26,7 @@ services:
     name: hostedgpt
     runtime: docker
     plan: free
+    region: frankfurt
     healthCheckPath: /up
     envVars:
       - key: DATABASE_URL
